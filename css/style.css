@@ -1,26 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-  --descanso: #607ef9;
-  --ciencias_naturales: #fa34cc;
-  --informatica: #fac5ce;
-  --matematicas: #d9b342;
-  --logica_matematica: #835de9;
-  --laboratorio_lector: #81faf1;
-  --fisica: #a18d1b;
-  --ingles: #ee9d82;
-  --sociales: #5acbe6;
-  --artes: #fa2028;
-  --ingles_Tecnico: #5ea119;
-  --geometria: #660740;
-  --logica_filosofica: #823e49;
-  --quimica: #cf2ff9;
-  --laboratorio_ciencias: #29a064;
-  --logica_matematica: #093a6b;
+  --descanso: #c05476;
+  --ciencias_naturales: #d85675;
+  --informatica: #da5234;
+  --matematicas: #d6837a;
+  --logica_matematica: #e3683e;
+  --laboratorio_lector: #dd7835;
+  --fisica: #e0963c;
+  --ingles: #e0963c;
+  --sociales: #d8be5e;
+  --artes: #bcc256;
+  --ingles_Tecnico: #85ad59;
+  --geometria: #55b080;
+  --logica_filosofica: #489160;
+  --quimica: #429a8e;
+  --laboratorio_ciencias: #4b99d2;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Permanent Marker", serif;
+  font-weight: bolder;
 }
 
 html {
@@ -28,6 +31,7 @@ html {
 }
 
 main {
+  padding: 1rem;
   display: flex;
   justify-content: center;
   background-color: #3c3c3c;
@@ -43,6 +47,9 @@ section {
 h5,
 .hora {
   width: 100%;
+  padding: 0.125rem;
+  color: white;
+  font-weight: 100;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -58,7 +65,6 @@ h5,
   height: 2.5rem;
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
-  border: solid black 0.0625rem;
   border-radius: 0.3125rem;
 }
 
@@ -69,7 +75,6 @@ h5,
   height: 9.15rem;
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
-  border: solid black 0.0625rem;
   border-radius: 0.3125rem;
 }
 
@@ -94,7 +99,6 @@ h5,
   gap: 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  /* width: 100%; */
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
