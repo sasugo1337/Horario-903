@@ -79,7 +79,7 @@ class _InfoMareria {
   }
 
   PosicionarElemento() {
-    let separacion = 4;
+    let separacion = 8;
     if (this.horientacion == 'horizontal') {
       let AnchoElemento = this.widthPadre * 0.9;
       this.Element.style.width = `${AnchoElemento}px`;
@@ -92,7 +92,8 @@ class _InfoMareria {
       }
     } else {
       let altoElemento = this.heightPadre * 0.9;
-      this.Element.style.height = `${altoElemento}px`;
+      // this.Element.style.height = `${altoElemento}px`;
+      this.Element.style.maxWidth = `min-content`;
       this.Element.style.top = `${this.yposPadre + this.heightPadre * 0.05}px`;
 
       if (this.xposPadre + this.widthPadre * 2 + 10 < window.innerWidth + window.scrollX) {
