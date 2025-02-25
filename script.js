@@ -56,11 +56,11 @@ class _InfoMareria {
     this.Element = document.createElement('div');
     let Background = new _Background().getElement();
     this.Element.classList.add('infoMateria');
-    let Profesor = document.createElement('div');
+    let Profesor = document.createElement('h5');
     Profesor.innerHTML = this.profesor;
-    let Salon = document.createElement('div');
+    let Salon = document.createElement('h4');
     Salon.innerHTML = `Salon ${this.salon}`;
-    let Hora = document.createElement('div');
+    let Hora = document.createElement('h4');
     Hora.innerHTML = this.hora;
     this.Element.insertAdjacentElement('beforeend', Profesor);
     this.Element.insertAdjacentElement('beforeend', Salon);
@@ -71,7 +71,7 @@ class _InfoMareria {
   }
 
   ObtenerDatosPadre() {
-    this.xposPadre = this.Padre.getBoundingClientRect().left;
+    this.xposPadre = this.Padre.getBoundingClientRect().left + window.scrollX;
     this.yposPadre = this.Padre.getBoundingClientRect().top + window.scrollY;
     this.widthPadre = this.Padre.clientWidth;
     this.heightPadre = this.Padre.clientHeight;
@@ -91,15 +91,13 @@ class _InfoMareria {
         this.Element.style.top = `${this.yposPadre - this.Element.clientHeight - separacion}px`;
       }
     } else {
-      let altoElemento = this.heightPadre * 0.9;
-      // this.Element.style.height = `${altoElemento}px`;
-      this.Element.style.maxWidth = `min-content`;
+      this.Element.style.width = `8rem`;
       this.Element.style.top = `${this.yposPadre + this.heightPadre * 0.05}px`;
 
-      if (this.xposPadre + this.widthPadre * 2 + 10 < window.innerWidth + window.scrollX) {
+      if (this.xposPadre + 128 + 40 < window.innerWidth + window.scrollX) {
         this.Element.style.left = `${this.xposPadre + this.widthPadre + separacion}px`;
       } else {
-        this.Element.style.left = `${this.xposPadre - this.widthPadre - separacion}px`;
+        this.Element.style.left = `${this.xposPadre - 128 - separacion}px`;
       }
     }
   }
