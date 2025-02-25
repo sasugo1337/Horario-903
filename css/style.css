@@ -11,11 +11,15 @@
   --ingles: #e0963c;
   --sociales: #d8be5e;
   --artes: #bcc256;
-  --ingles_Tecnico: #85ad59;
+  --ingles_tecnico: #85ad59;
   --geometria: #55b080;
   --logica_filosofica: #489160;
   --quimica: #429a8e;
   --laboratorio_ciencias: #4b99d2;
+  --castellano: #668be1;
+  --educacion_fisica: #668be1;
+  --etica_y_religion: #828bc2;
+  --laboratorio_ingles: #ae9cce;
 }
 
 * {
@@ -31,18 +35,10 @@ html {
 }
 
 main {
-  padding: 1rem;
+  width: min-content;
   display: flex;
-  justify-content: center;
   background-color: #3c3c3c;
   min-height: 100vh;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20vw;
 }
 
 h4 {
@@ -57,7 +53,20 @@ h5,
   color: white;
   font-weight: 100;
   word-wrap: break-word;
-  overflow-wrap: break-word;
+}
+
+.semana {
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
 }
 
 .hora {
@@ -67,7 +76,7 @@ h5,
 .descanso {
   display: flex;
   flex-wrap: wrap;
-  width: 15vw;
+  width: 80%;
   height: 2.5rem;
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
@@ -77,7 +86,7 @@ h5,
 .materia {
   display: flex;
   flex-wrap: wrap;
-  width: 15vw;
+  width: 80%;
   height: 9.15rem;
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
@@ -171,8 +180,8 @@ h5,
   background-color: var(--artes);
 }
 
-.ingles_Tecnico {
-  background-color: var(--ingles_Tecnico);
+.ingles_tecnico {
+  background-color: var(--ingles_tecnico);
 }
 
 .geometria {
@@ -189,4 +198,20 @@ h5,
 
 .laboratorio_ciencias {
   background-color: var(--laboratorio_ciencias);
+}
+
+.castellano {
+  background-color: var(--castellano);
+}
+
+.educacion_fisica {
+  background-color: var(--educacion_fisica);
+}
+
+.etica_y_religion {
+  background-color: var(--etica_y_religion);
+}
+
+.laboratorio_ingles {
+  background-color: var(--laboratorio_ingles);
 }
