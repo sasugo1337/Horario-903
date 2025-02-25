@@ -1,0 +1,172 @@
+:root {
+  --descanso: #607ef9;
+  --ciencias_naturales: #fa34cc;
+  --informatica: #fac5ce;
+  --matematicas: #d9b342;
+  --logica_matematica: #835de9;
+  --laboratorio_lector: #81faf1;
+  --fisica: #a18d1b;
+  --ingles: #ee9d82;
+  --sociales: #5acbe6;
+  --artes: #fa2028;
+  --ingles_Tecnico: #5ea119;
+  --geometria: #660740;
+  --logica_filosofica: #823e49;
+  --quimica: #cf2ff9;
+  --laboratorio_ciencias: #29a064;
+  --logica_matematica: #093a6b;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #3c3c3c;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+}
+
+h5,
+.hora {
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.hora {
+  display: none;
+}
+
+.descanso {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15vw;
+  height: 2.5rem;
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+  border: solid black 0.0625rem;
+  border-radius: 0.3125rem;
+}
+
+.materia {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15vw;
+  height: 9.15rem;
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+  border: solid black 0.0625rem;
+  border-radius: 0.3125rem;
+}
+
+.ocultar-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.infoMateria {
+  position: absolute;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  /* width: 100%; */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.materia:hover {
+  cursor: pointer;
+}
+
+.materia:nth-child(5) {
+  height: 7.5rem;
+}
+
+.materia:nth-child(7) {
+  height: 8.3rem;
+}
+
+.descanso {
+  background-color: var(--descanso);
+}
+
+.ciencias_naturales {
+  background-color: var(--ciencias_naturales);
+}
+
+.informatica {
+  background-color: var(--informatica);
+}
+
+.matematicas {
+  background-color: var(--matematicas);
+}
+
+.logica_matematica {
+  background-color: var(--logica_matematica);
+}
+
+.laboratorio_lector {
+  background-color: var(--laboratorio_lector);
+}
+
+.fisica {
+  background-color: var(--fisica);
+}
+
+.ingles {
+  background-color: var(--ingles);
+}
+
+.sociales {
+  background-color: var(--sociales);
+}
+
+.artes {
+  background-color: var(--artes);
+}
+
+.ingles_Tecnico {
+  background-color: var(--ingles_Tecnico);
+}
+
+.geometria {
+  background-color: var(--geometria);
+}
+
+.logica_filosofica {
+  background-color: var(--logica_filosofica);
+}
+
+.quimica {
+  background-color: var(--quimica);
+}
+
+.laboratorio_ciencias {
+  background-color: var(--laboratorio_ciencias);
+}
