@@ -29,8 +29,6 @@ class _Background {
   insertarBackground() {
     let main = document.getElementById('main');
     main.insertAdjacentElement('beforeend', this.Element);
-    this.Element.style.width = `${main.clientWidth}px`;
-    this.Element.style.height = `${main.clientHeight}px`;
   }
 
   retirarBackground() {
@@ -102,3 +100,22 @@ class _InfoMareria {
     }
   }
 }
+
+// window.onscroll = () => {
+//   console.log('Scroll');
+//   console.log();
+// };
+
+// document.addEventListener('scroll', (e) => {
+//   console.log('Scroll');
+//   console.log(e);
+// });
+
+// document.addEventListener('scroll', (event) => {
+//   console.log(event);
+// });
+
+// window.addEventListener('scroll', (e) => {
+//   console.log('Scroll detectado');
+//   console.log(e);
+// });
