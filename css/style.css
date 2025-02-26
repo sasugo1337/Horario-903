@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --descanso: #c05476;
@@ -26,7 +26,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Permanent Marker', serif;
+  font-family: "Permanent Marker", serif;
   font-weight: bolder;
 }
 
@@ -52,6 +52,12 @@ h4 {
   font-weight: bolder;
 }
 
+h2 {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
 h5,
 .hora {
   width: 100%;
@@ -61,7 +67,8 @@ h5,
   word-wrap: break-word;
 }
 
-.semana {
+.semana_1,
+.semana_2 {
   width: 100vw;
   padding: 1rem;
   display: flex;
