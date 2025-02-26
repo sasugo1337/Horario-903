@@ -35,16 +35,10 @@ html {
 }
 
 main {
-  width: min-content;
+  width: max-content;
   display: flex;
   background-color: #3c3c3c;
   min-height: 100vh;
-}
-
-html,
-body {
-  height: 100%;
-  overflow-x: auto;
 }
 
 h4 {
@@ -222,4 +216,12 @@ h5,
 
 .laboratorio_ingles {
   background-color: var(--laboratorio_ingles);
+}
+
+@media (max-width: 450px) {
+  html,
+  body {
+    min-height: 100vh;
+    overflow-y: auto;
+  }
 }

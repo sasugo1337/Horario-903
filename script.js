@@ -92,7 +92,7 @@ class _InfoMareria {
       this.Element.style.width = `8rem`;
       this.Element.style.top = `${this.yposPadre + this.heightPadre * 0.05}px`;
 
-      if (this.xposPadre + 128 + 40 < window.innerWidth + window.scrollX) {
+      if (this.xposPadre + 128 + 80 < window.innerWidth + window.scrollX) {
         this.Element.style.left = `${this.xposPadre + this.widthPadre + separacion}px`;
       } else {
         this.Element.style.left = `${this.xposPadre - 128 - separacion}px`;
@@ -100,22 +100,3 @@ class _InfoMareria {
     }
   }
 }
-
-// window.onscroll = () => {
-//   console.log('Scroll');
-//   console.log();
-// };
-
-// document.addEventListener('scroll', (e) => {
-//   console.log('Scroll');
-//   console.log(e);
-// });
-
-// document.addEventListener('scroll', (event) => {
-//   console.log(event);
-// });
-
-// window.addEventListener('scroll', (e) => {
-//   console.log('Scroll detectado');
-//   console.log(e);
-// });
