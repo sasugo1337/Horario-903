@@ -7,8 +7,11 @@ function MostrarInfoMateria(event) {
   while (!Objetivo.classList.contains('materia')) {
     Objetivo = Objetivo.parentElement;
   }
-  console.log();
-  new _InfoMareria(Objetivo, Objetivo.getAttribute('data-profesor'), Objetivo.getAttribute('data-salon'), Objetivo.getAttribute('data-hora'));
+  if (!document.getElementById('background')) {
+    new _InfoMareria(Objetivo, Objetivo.getAttribute('data-profesor'), Objetivo.getAttribute('data-salon'), Objetivo.getAttribute('data-hora'));
+  } else {
+    document.getElementById('background').remove();
+  }
 }
 
 class _Background {
@@ -20,7 +23,10 @@ class _Background {
   construirBackground() {
     this.Element = document.createElement('div');
     this.Element.classList.add('background');
+    this.Element.id = 'background';
     this.insertarBackground();
+    console.log(window.scrollX);
+    this.Element.style.left = `${window.scrollX}px`;
     this.Element.addEventListener('click', () => {
       this.retirarBackground();
     });
@@ -69,7 +75,7 @@ class _InfoMareria {
   }
 
   ObtenerDatosPadre() {
-    this.xposPadre = this.Padre.getBoundingClientRect().left + window.scrollX;
+    this.xposPadre = this.Padre.getBoundingClientRect().left;
     this.yposPadre = this.Padre.getBoundingClientRect().top + window.scrollY;
     this.widthPadre = this.Padre.clientWidth;
     this.heightPadre = this.Padre.clientHeight;
