@@ -1,0 +1,385 @@
+{
+  "dias": [
+    "lunes",
+    "martes",
+    "miércoles",
+    "jueves",
+    "viernes",
+    "sábado",
+    "domingo"
+  ],
+  "bloques": [
+    {
+      "numero": 1,
+      "inicio": "6:30",
+      "fin": "8:20"
+    },
+    {
+      "numero": 2,
+      "inicio": "8:20",
+      "fin": "10:10"
+    },
+    {
+      "numero": 3,
+      "inicio": "10:10",
+      "fin": "10:40"
+    },
+    {
+      "numero": 4,
+      "inicio": "10:40",
+      "fin": "12:10"
+    },
+    {
+      "numero": 5,
+      "inicio": "12:10",
+      "fin": "12:40"
+    },
+    {
+      "numero": 6,
+      "inicio": "12:40",
+      "fin": "14:20"
+    }
+  ],
+  "materias": [
+    {
+      "nombre": "Descanso",
+      "nombreProfesor": null,
+      "horarios": [
+        {
+          "semana": 1,
+          "dias": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "bloque": 3,
+          "salon": null
+        },
+        {
+          "semana": 1,
+          "dias": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "bloque": 5,
+          "salon": null
+        },
+        {
+          "semana": 2,
+          "dias": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "bloque": 3,
+          "salon": null
+        },
+        {
+          "semana": 2,
+          "dias": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "bloque": 5,
+          "salon": null
+        }
+      ],
+      "class": "descanso"
+    },
+    {
+      "nombre": "Ciencias Naturales",
+      "nombreProfesor": "Hammes.",
+      "horarios": [
+        {
+          "semana": 1,
+          "dias": [
+            1
+          ],
+          "bloque": 2,
+          "salon": "206"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            1
+          ],
+          "bloque": 4,
+          "salon": "100"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            2
+          ],
+          "bloque": 1,
+          "salon": "109"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            3
+          ],
+          "bloque": 5,
+          "salon": "100"
+        }
+      ],
+      "class": "ciencias_naturales"
+    },
+    {
+      "nombre": "Informática",
+      "nombreProfesor": "Jhon Fredy.",
+      "horarios": [
+        {
+          "semana": 2,
+          "dias": [
+            1
+          ],
+          "bloque": 1,
+          "salon": "119"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            4
+          ],
+          "bloque": 4,
+          "salon": "119"
+        }
+      ],
+      "class": "informatica"
+    },
+    {
+      "nombre": "Matemáticas",
+      "nombreProfesor": "Donaldo F.",
+      "horarios": [
+        {
+          "semana": 1,
+          "dias": [
+            3
+          ],
+          "bloque": 2,
+          "salon": "203"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            0
+          ],
+          "bloque": 6,
+          "salon": "203"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            3
+          ],
+          "bloque": 1,
+          "salon": "203"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            4
+          ],
+          "bloque": 2,
+          "salon": "203"
+        }
+      ],
+      "class": "matematicas"
+    },
+    {
+      "nombre": "Lógica Matemática",
+      "nombreProfesor": "Jhon Jairo.",
+      "horarios": [
+        {
+          "semana": 1,
+          "dias": [
+            0
+          ],
+          "bloque": 6,
+          "salon": "211"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            3
+          ],
+          "bloque": 6,
+          "salon": "204"
+        }
+      ],
+      "class": "logica_matematica"
+    },
+    {
+      "nombre": "Física",
+      "nombreProfesor": "Alix M.",
+      "horarios": [
+        {
+          "semana": 1,
+          "dias": [
+            4
+          ],
+          "bloque": 1,
+          "salon": "210"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            0
+          ],
+          "bloque": 2,
+          "salon": "205"
+        }
+      ],
+      "class": "fisica"
+    },
+    {
+      "nombre": "Inglés",
+      "nombreProfesor": "Stefany.",
+      "horarios": [
+        {
+          "semana": 1,
+          "dias": [
+            1
+          ],
+          "bloque": 4,
+          "salon": "202"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            4
+          ],
+          "bloque": 6,
+          "salon": "202"
+        }
+      ],
+      "class": "ingles"
+    },
+    {
+      "nombre": "Artes",
+      "nombreProfesor": "Andres G.",
+      "horarios": [
+        {
+          "semana": 2,
+          "dias": [
+            0
+          ],
+          "bloque": 4,
+          "salon": "108"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            4
+          ],
+          "bloque": 1,
+          "salon": "108"
+        }
+      ],
+      "class": "artes"
+    },
+    {
+      "nombre": "Química",
+      "nombreProfesor": "Alexandra V.",
+      "horarios": [
+        {
+          "semana": 1,
+          "dias": [
+            0
+          ],
+          "bloque": 4,
+          "salon": "205"
+        },
+        {
+          "semana": 1,
+          "dias": [
+            4
+          ],
+          "bloque": 2,
+          "salon": "205"
+        }
+      ],
+      "class": "quimica"
+    },
+    {
+      "nombre": "Castellano",
+      "nombreProfesor": "Sandra F.",
+      "horarios": [
+        {
+          "semana": 1,
+          "dias": [
+            1
+          ],
+          "bloque": 6,
+          "salon": "118"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            0
+          ],
+          "bloque": 1,
+          "salon": "115"
+        },
+        {
+          "semana": 2,
+          "dias": [
+            1
+          ],
+          "bloque": 6,
+          "salon": "121"
+        }
+      ],
+      "class": "castellano"
+    },
+    {
+      "nombre": "Ética y Religión",
+      "nombreProfesor": "Roberto S.",
+      "horarios": [
+        {
+          "semana": 1,
+          "dias": [
+            0
+          ],
+          "bloque": 2,
+          "salon": "204"
+        },
+        {
+          "semana": 1,
+          "dias": [
+            3
+          ],
+          "bloque": 4,
+          "salon": "204"
+        }
+      ],
+      "class": "etica_y_religion"
+    },
+    {
+      "nombre": "Laboratorio Inglés",
+      "nombreProfesor": "Stefany.",
+      "horarios": [
+        {
+          "semana": 2,
+          "dias": [
+            2
+          ],
+          "bloque": 6,
+          "salon": "112"
+        }
+      ],
+      "class": "laboratorio_ingles"
+    }
+  ]
+}
