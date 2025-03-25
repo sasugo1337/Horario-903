@@ -9,6 +9,139 @@ const bloques = [
   {numero: 6, inicio: '12:40 pm', fin: '2:20 pm'},
 ];
 
+const _dias = [
+  {
+    id_dia: 1,
+    nombre: 'lunes',
+    abreviatura: 'L',
+    materias: [
+      {id_materia: 1, salon: '205'},
+      {id_materia: 1, salon: '205'},
+      {id_materia: 0, salon: null},
+      {id_materia: 1, salon: '205'},
+      {id_materia: 0, salon: '205'},
+      {id_materia: 1, salon: null},
+    ],
+  },
+];
+
+const _materias = [
+  {
+    id_materia: 0,
+    nombre: 'Descanso',
+    nombreProfesor: null,
+    class_: 'descanso',
+  },
+  {
+    id_materia: 1,
+    nombre: 'Ciencias Narurales',
+    nombreProfesor: 'Hammes.',
+    class_: 'ciencias_naturales',
+  },
+  {
+    id_materia: 2,
+    nombre: 'Informatica',
+    nombreProfesor: 'Jhon Fredy.',
+    class_: 'informatica',
+  },
+  {
+    id_materia: 3,
+    nombre: 'Matemáticas',
+    nombreProfesor: 'Donaldo F.',
+    class_: 'matematicas',
+  },
+  {
+    id_materia: 4,
+    nombre: 'Lógica Matemática',
+    nombreProfesor: 'Jhon Jairo.',
+    class_: 'logica_matematica',
+  },
+  {
+    id_materia: 5,
+    nombre: 'Laboratorio lector',
+    nombreProfesor: 'Yadira S.',
+    class_: 'laboratorio_lector',
+  },
+  {
+    id_materia: 6,
+    nombre: 'Física',
+    nombreProfesor: 'Alix M.',
+    class_: 'fisica',
+  },
+  {
+    id_materia: 7,
+    nombre: 'Inglés',
+    nombreProfesor: 'Stefany.',
+    class_: 'ingles',
+  },
+  {
+    id_materia: 8,
+    nombre: 'Sociales',
+    nombreProfesor: 'Sandra Ch.',
+    class_: 'sociales',
+  },
+  {
+    id_materia: 9,
+    nombre: 'Artes',
+    nombreProfesor: 'Andres G.',
+    class_: 'artes',
+  },
+  {
+    id_materia: 10,
+    nombre: 'Inglés Técnico',
+    nombreProfesor: 'Emilce M.',
+    class_: 'ingles_tecnico',
+  },
+  {
+    id_materia: 11,
+    nombre: 'Geometría',
+    nombreProfesor: 'Nelson R.',
+    class_: 'geometria',
+  },
+  {
+    id_materia: 12,
+    nombre: 'Lógica Filosófica',
+    nombreProfesor: 'Edisson.',
+    class_: 'logica_filosofica',
+  },
+  {
+    id_materia: 13,
+    nombre: 'Química',
+    nombreProfesor: 'Alexandra V.',
+    class_: 'quimica',
+  },
+  {
+    id_materia: 14,
+    nombre: 'Laboratorio Ciencias',
+    nombreProfesor: 'Alexandra V.',
+    class_: 'laboratorio_ciencias',
+  },
+  {
+    id_materia: 15,
+    nombre: 'Castellano',
+    nombreProfesor: 'Sandra F.',
+    class_: 'castellano',
+  },
+  {
+    id_materia: 16,
+    nombre: 'Educación Física',
+    nombreProfesor: 'Matha Paola.',
+    class_: 'educacion_fisica',
+  },
+  {
+    id_materia: 17,
+    nombre: 'Ética y Religión',
+    nombreProfesor: 'Roberto S.',
+    class_: 'etica_y_religion',
+  },
+  {
+    id_materia: 18,
+    nombre: 'Laboratorio Inglés',
+    nombreProfesor: 'Stefany.',
+    class_: 'laboratorio_ingles',
+  },
+];
+
 const descanso = {
   nombre: 'Descanso',
   nombreProfesor: null,
@@ -457,7 +590,7 @@ function buildWeekHTML(WeekNum) {
     getSubjectsForDay(WeekNum, i).forEach(({nombre, nombreProfesor, horarios, class_}) => {
       let {inicio, fin} = bloques.find((block) => block.numero == horarios[0].bloque);
       day.Element.innerHTML += `
-          <div data-hora="${inicio} - ${fin}" data-profesor="${nombreProfesor}" data-salon="${horarios[0].salon}" class="materia ${class_}">
+          <div data-hora="${inicio} - ${fin}" data-profesor="${nombreProfesor}" data-salon="${horarios[0].salon}" class="${class_ != 'descanso' ? 'materia' : ''} ${class_}">
             <h5>${nombre}</h5>
             <span class="hora">${inicio} - ${fin}</span>
           </div>
