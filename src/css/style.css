@@ -153,64 +153,16 @@ h5,
   background-color: var(--descanso);
 }
 
-.ciencias_naturales {
-  background-color: var(--ciencias_naturales);
-}
-
-.informatica {
-  background-color: var(--informatica);
-}
-
-.matematicas {
-  background-color: var(--matematicas);
-}
-
-.logica_matematica {
-  background-color: var(--logica_matematica);
-}
-
-.laboratorio_lector {
-  background-color: var(--laboratorio_lector);
-}
-
-.fisica {
-  background-color: var(--fisica);
-}
-
-.ingles {
-  background-color: var(--ingles);
-}
-
-.sociales {
-  background-color: var(--sociales);
-}
-
 .artes {
   background-color: var(--artes);
 }
 
-.ingles_tecnico {
-  background-color: var(--ingles_tecnico);
-}
-
-.geometria {
-  background-color: var(--geometria);
-}
-
-.logica_filosofica {
-  background-color: var(--logica_filosofica);
-}
-
-.quimica {
-  background-color: var(--quimica);
-}
-
-.laboratorio_ciencias {
-  background-color: var(--laboratorio_ciencias);
-}
-
 .castellano {
   background-color: var(--castellano);
+}
+
+.ciencias_naturales {
+  background-color: var(--ciencias_naturales);
 }
 
 .educacion_fisica {
@@ -221,8 +173,56 @@ h5,
   background-color: var(--etica_y_religion);
 }
 
+.fisica {
+  background-color: var(--fisica);
+}
+
+.geometria {
+  background-color: var(--geometria);
+}
+
+.ingles {
+  background-color: var(--ingles);
+}
+
+.ingles_tecnico {
+  background-color: var(--ingles_tecnico);
+}
+
+.informatica {
+  background-color: var(--informatica);
+}
+
+.laboratorio_ciencias {
+  background-color: var(--laboratorio_ciencias);
+}
+
 .laboratorio_ingles {
   background-color: var(--laboratorio_ingles);
+}
+
+.laboratorio_lector {
+  background-color: var(--laboratorio_lector);
+}
+
+.logica_filosofica {
+  background-color: var(--logica_filosofica);
+}
+
+.logica_matematica {
+  background-color: var(--logica_matematica);
+}
+
+.matematicas {
+  background-color: var(--matematicas);
+}
+
+.quimica {
+  background-color: var(--quimica);
+}
+
+.sociales {
+  background-color: var(--sociales);
 }
 
 @media (max-width: 450px) {
