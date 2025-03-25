@@ -1,23 +1,24 @@
 const dias = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
+const diasShort = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
 const bloques = [
-  {numero: 1, inicio: '6:30', fin: '8:20'},
-  {numero: 2, inicio: '8:20', fin: '10:10'},
-  {numero: 3, inicio: '10:10', fin: '10:40'},
-  {numero: 4, inicio: '10:40', fin: '12:10'},
-  {numero: 5, inicio: '12:10', fin: '12:40'},
-  {numero: 6, inicio: '12:40', fin: '14:20'},
+  {numero: 1, inicio: '6:30 am', fin: '8:20 am'},
+  {numero: 2, inicio: '8:20 am', fin: '10:10 am'},
+  {numero: 3, inicio: '10:10 am', fin: '10:40 am'},
+  {numero: 4, inicio: '10:40 am', fin: '12:10 pm'},
+  {numero: 5, inicio: '12:10 pm', fin: '12:40 pm'},
+  {numero: 6, inicio: '12:40 pm', fin: '2:20 pm'},
 ];
 
 const descanso = {
   nombre: 'Descanso',
   nombreProfesor: null,
   horarios: [
-    {semana: 1, dias: [1, 2, 3, 4, 5], bloque: 3, salon: null},
-    {semana: 1, dias: [1, 2, 3, 4, 5], bloque: 5, salon: null},
-    {semana: 2, dias: [1, 2, 3, 4, 5], bloque: 3, salon: null},
-    {semana: 2, dias: [1, 2, 3, 4, 5], bloque: 5, salon: null},
+    {semana: 1, dias: [0, 1, 2, 3, 4], bloque: 3, salon: null},
+    {semana: 1, dias: [0, 1, 2, 3, 4], bloque: 5, salon: null},
+    {semana: 2, dias: [0, 1, 2, 3, 4], bloque: 3, salon: null},
+    {semana: 2, dias: [0, 1, 2, 3, 4], bloque: 5, salon: null},
   ],
-  class: 'descanso',
+  class_: 'descanso',
 };
 
 const ciencias_naturales = {
@@ -45,11 +46,11 @@ const ciencias_naturales = {
     {
       semana: 2,
       dias: [3],
-      bloque: 5,
+      bloque: 4,
       salon: '100',
     },
   ],
-  class: 'ciencias_naturales',
+  class_: 'ciencias_naturales',
 };
 
 const informatica = {
@@ -69,7 +70,7 @@ const informatica = {
       salon: '119',
     },
   ],
-  class: 'informatica',
+  class_: 'informatica',
 };
 
 const matematicas = {
@@ -101,7 +102,7 @@ const matematicas = {
       salon: '203',
     },
   ],
-  class: 'matematicas',
+  class_: 'matematicas',
 };
 
 const logica_matematica = {
@@ -121,11 +122,11 @@ const logica_matematica = {
       salon: '204',
     },
   ],
-  class: 'logica_matematica',
+  class_: 'logica_matematica',
 };
 
 const laboratorio_lector = {
-  nombre: 'Lógica Matemática',
+  nombre: 'Laboratorio lector',
   nombreProfesor: 'Yadira S.',
   horarios: [
     {
@@ -135,7 +136,7 @@ const laboratorio_lector = {
       salon: '114',
     },
   ],
-  class: 'laboratorio_lector',
+  class_: 'laboratorio_lector',
 };
 
 const fisica = {
@@ -155,7 +156,7 @@ const fisica = {
       salon: '205',
     },
   ],
-  class: 'fisica',
+  class_: 'fisica',
 };
 
 const ingles = {
@@ -175,7 +176,7 @@ const ingles = {
       salon: '202',
     },
   ],
-  class: 'ingles',
+  class_: 'ingles',
 };
 
 const sociales = {
@@ -213,7 +214,7 @@ const sociales = {
       salon: '201',
     },
   ],
-  class: 'sociales',
+  class_: 'sociales',
 };
 
 const artes = {
@@ -233,7 +234,7 @@ const artes = {
       salon: '108',
     },
   ],
-  class: 'artes',
+  class_: 'artes',
 };
 
 const ingles_tecnico = {
@@ -253,7 +254,7 @@ const ingles_tecnico = {
       salon: '99',
     },
   ],
-  class: 'ingles_tecnico',
+  class_: 'ingles_tecnico',
 };
 
 const geometria = {
@@ -267,7 +268,7 @@ const geometria = {
       salon: '203',
     },
   ],
-  class: 'geometria',
+  class_: 'geometria',
 };
 
 const logica_filosofica = {
@@ -287,7 +288,7 @@ const logica_filosofica = {
       salon: '201',
     },
   ],
-  class: 'logica_filosofica',
+  class_: 'logica_filosofica',
 };
 
 const quimica = {
@@ -307,7 +308,7 @@ const quimica = {
       salon: '205',
     },
   ],
-  class: 'quimica',
+  class_: 'quimica',
 };
 
 const laboratorio_ciencias = {
@@ -321,7 +322,7 @@ const laboratorio_ciencias = {
       salon: '209',
     },
   ],
-  class: 'laboratorio_ciencias',
+  class_: 'laboratorio_ciencias',
 };
 
 const castellano = {
@@ -347,7 +348,7 @@ const castellano = {
       salon: '121',
     },
   ],
-  class: 'castellano',
+  class_: 'castellano',
 };
 
 const educacion_fisica = {
@@ -367,7 +368,7 @@ const educacion_fisica = {
       salon: 'Patio 3',
     },
   ],
-  class: 'educacion_fisica',
+  class_: 'educacion_fisica',
 };
 
 const etica_y_religion = {
@@ -387,7 +388,7 @@ const etica_y_religion = {
       salon: '204',
     },
   ],
-  class: 'etica_y_religion',
+  class_: 'etica_y_religion',
 };
 
 const laboratorio_ingles = {
@@ -401,7 +402,7 @@ const laboratorio_ingles = {
       salon: '112',
     },
   ],
-  class: 'laboratorio_ingles',
+  class_: 'laboratorio_ingles',
 };
 
 const Materias = [
@@ -426,4 +427,55 @@ const Materias = [
   laboratorio_ingles,
 ];
 
-console.log(Materias);
+class CrearElementoHTML {
+  constructor(tagName, id, classList, style, innerHTML, title) {
+    this.elemento = document.createElement(tagName);
+    if (id) this.elemento.id = id;
+    if (classList) this.elemento.classList = classList;
+    if (style) this.elemento.style = style;
+    if (innerHTML) this.elemento.innerHTML = innerHTML;
+    if (title) this.elemento.title = title;
+  }
+
+  get Element() {
+    return this.elemento;
+  }
+}
+
+(function buildSchedulesHTML() {
+  for (let i = 1; i <= 2; i++) {
+    buildWeekHTML(i);
+  }
+})();
+
+function buildWeekHTML(WeekNum) {
+  const Week = document.getElementById(`Semana_${WeekNum}`);
+  for (let i = 0; i < 5; i++) {
+    let day = new CrearElementoHTML('DIV', null, 'dia', null, `<h4>${diasShort[i]}</h4>`);
+    getSubjectsForDay(WeekNum, i).forEach(({nombre, nombreProfesor, horarios, class_}) => {
+      let {inicio, fin} = bloques.find((block) => block.numero == horarios[0].bloque);
+      day.Element.innerHTML += `
+          <div data-hora="${inicio} - ${fin}" data-profesor="${nombreProfesor}" data-salon="${horarios[0].salon}" class="materia ${class_}">
+            <h5>${nombre}</h5>
+            <span class="hora">${inicio} - ${fin}</span>
+          </div>
+        `;
+    });
+    Week.insertAdjacentElement('beforeend', day.Element);
+  }
+}
+
+function getSubjectsForDay(week, day) {
+  let Subjects = [];
+  Materias.forEach((Subject) => {
+    Subject.horarios.forEach((horary) => {
+      if (horary.semana === week && horary.dias.includes(day)) {
+        let temSubject = {...Subject, horarios: [horary]}; //Utilizamos esta asignación para crear una copia del objeto y no una nueva referencia a el
+        temSubject.horarios = [horary];
+        Subjects.push(temSubject);
+      }
+    });
+  });
+  Subjects.sort((a, b) => a.horarios[0].bloque - b.horarios[0].bloque);
+  return Subjects;
+}
