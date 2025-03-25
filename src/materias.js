@@ -1,22 +1,22 @@
 const dias = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
 const diasShort = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
 const bloques = [
-  {numero: 1, inicio: '6:30 am', fin: '8:20 am'},
-  {numero: 2, inicio: '8:20 am', fin: '10:10 am'},
-  {numero: 3, inicio: '10:10 am', fin: '10:40 am'},
-  {numero: 4, inicio: '10:40 am', fin: '12:10 pm'},
-  {numero: 5, inicio: '12:10 pm', fin: '12:40 pm'},
-  {numero: 6, inicio: '12:40 pm', fin: '2:20 pm'},
+  { numero: 1, inicio: '6:30 am', fin: '8:20 am' },
+  { numero: 2, inicio: '8:20 am', fin: '10:10 am' },
+  { numero: 3, inicio: '10:10 am', fin: '10:40 am' },
+  { numero: 4, inicio: '10:40 am', fin: '12:10 pm' },
+  { numero: 5, inicio: '12:10 pm', fin: '12:40 pm' },
+  { numero: 6, inicio: '12:40 pm', fin: '2:20 pm' },
 ];
 
 const descanso = {
   nombre: 'Descanso',
   nombreProfesor: null,
   horarios: [
-    {semana: 1, dias: [0, 1, 2, 3, 4], bloque: 3, salon: null},
-    {semana: 1, dias: [0, 1, 2, 3, 4], bloque: 5, salon: null},
-    {semana: 2, dias: [0, 1, 2, 3, 4], bloque: 3, salon: null},
-    {semana: 2, dias: [0, 1, 2, 3, 4], bloque: 5, salon: null},
+    { semana: 1, dias: [0, 1, 2, 3, 4], bloque: 3, salon: null },
+    { semana: 1, dias: [0, 1, 2, 3, 4], bloque: 5, salon: null },
+    { semana: 2, dias: [0, 1, 2, 3, 4], bloque: 3, salon: null },
+    { semana: 2, dias: [0, 1, 2, 3, 4], bloque: 5, salon: null },
   ],
   class_: 'descanso',
 };
@@ -454,8 +454,8 @@ function buildWeekHTML(WeekNum) {
   const Week = document.getElementById(`Semana_${WeekNum}`);
   for (let i = 0; i < 5; i++) {
     let day = new CrearElementoHTML('DIV', null, 'dia', null, `<h4>${diasShort[i]}</h4>`);
-    getSubjectsForDay(WeekNum, i).forEach(({nombre, nombreProfesor, horarios, class_}) => {
-      let {inicio, fin} = bloques.find((block) => block.numero == horarios[0].bloque);
+    getSubjectsForDay(WeekNum, i).forEach(({ nombre, nombreProfesor, horarios, class_ }) => {
+      let { inicio, fin } = bloques.find((block) => block.numero == horarios[0].bloque);
       day.Element.innerHTML += `
           <div data-hora="${inicio} - ${fin}" data-profesor="${nombreProfesor}" data-salon="${horarios[0].salon}" class="materia ${class_}">
             <h5>${nombre}</h5>
@@ -472,7 +472,7 @@ function getSubjectsForDay(week, day) {
   Materias.forEach((Subject) => {
     Subject.horarios.forEach((horary) => {
       if (horary.semana === week && horary.dias.includes(day)) {
-        let temSubject = {...Subject, horarios: [horary]}; //Utilizamos esta asignación para crear una copia del objeto y no una nueva referencia a el
+        let temSubject = { ...Subject, horarios: [horary] }; //Utilizamos esta asignación para crear una copia del objeto y no una nueva referencia a el
         temSubject.horarios = [horary];
         Subjects.push(temSubject);
       }
