@@ -1,13 +1,5 @@
 {
-  "dias": [
-    "lunes",
-    "martes",
-    "miércoles",
-    "jueves",
-    "viernes",
-    "sábado",
-    "domingo"
-  ],
+  "dias": ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"],
   "bloques": [
     {
       "numero": 1,
@@ -47,49 +39,25 @@
       "horarios": [
         {
           "semana": 1,
-          "dias": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
+          "dias": [1, 2, 3, 4, 5],
           "bloque": 3,
           "salon": null
         },
         {
           "semana": 1,
-          "dias": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
+          "dias": [1, 2, 3, 4, 5],
           "bloque": 5,
           "salon": null
         },
         {
           "semana": 2,
-          "dias": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
+          "dias": [1, 2, 3, 4, 5],
           "bloque": 3,
           "salon": null
         },
         {
           "semana": 2,
-          "dias": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
+          "dias": [1, 2, 3, 4, 5],
           "bloque": 5,
           "salon": null
         }
@@ -102,33 +70,25 @@
       "horarios": [
         {
           "semana": 1,
-          "dias": [
-            1
-          ],
+          "dias": [1],
           "bloque": 2,
           "salon": "206"
         },
         {
           "semana": 2,
-          "dias": [
-            1
-          ],
+          "dias": [1],
           "bloque": 4,
           "salon": "100"
         },
         {
           "semana": 2,
-          "dias": [
-            2
-          ],
+          "dias": [2],
           "bloque": 1,
           "salon": "109"
         },
         {
           "semana": 2,
-          "dias": [
-            3
-          ],
+          "dias": [3],
           "bloque": 5,
           "salon": "100"
         }
@@ -141,17 +101,13 @@
       "horarios": [
         {
           "semana": 2,
-          "dias": [
-            1
-          ],
+          "dias": [1],
           "bloque": 1,
           "salon": "119"
         },
         {
           "semana": 2,
-          "dias": [
-            4
-          ],
+          "dias": [4],
           "bloque": 4,
           "salon": "119"
         }
@@ -164,33 +120,25 @@
       "horarios": [
         {
           "semana": 1,
-          "dias": [
-            3
-          ],
+          "dias": [3],
           "bloque": 2,
           "salon": "203"
         },
         {
           "semana": 2,
-          "dias": [
-            0
-          ],
+          "dias": [0],
           "bloque": 6,
           "salon": "203"
         },
         {
           "semana": 2,
-          "dias": [
-            3
-          ],
+          "dias": [3],
           "bloque": 1,
           "salon": "203"
         },
         {
           "semana": 2,
-          "dias": [
-            4
-          ],
+          "dias": [4],
           "bloque": 2,
           "salon": "203"
         }
@@ -203,17 +151,13 @@
       "horarios": [
         {
           "semana": 1,
-          "dias": [
-            0
-          ],
+          "dias": [0],
           "bloque": 6,
           "salon": "211"
         },
         {
           "semana": 2,
-          "dias": [
-            3
-          ],
+          "dias": [3],
           "bloque": 6,
           "salon": "204"
         }
@@ -226,17 +170,13 @@
       "horarios": [
         {
           "semana": 1,
-          "dias": [
-            4
-          ],
+          "dias": [4],
           "bloque": 1,
           "salon": "210"
         },
         {
           "semana": 2,
-          "dias": [
-            0
-          ],
+          "dias": [0],
           "bloque": 2,
           "salon": "205"
         }
@@ -249,17 +189,13 @@
       "horarios": [
         {
           "semana": 1,
-          "dias": [
-            1
-          ],
+          "dias": [1],
           "bloque": 4,
           "salon": "202"
         },
         {
           "semana": 2,
-          "dias": [
-            4
-          ],
+          "dias": [4],
           "bloque": 6,
           "salon": "202"
         }
@@ -272,17 +208,13 @@
       "horarios": [
         {
           "semana": 2,
-          "dias": [
-            0
-          ],
+          "dias": [0],
           "bloque": 4,
           "salon": "108"
         },
         {
           "semana": 2,
-          "dias": [
-            4
-          ],
+          "dias": [4],
           "bloque": 1,
           "salon": "108"
         }
@@ -295,17 +227,13 @@
       "horarios": [
         {
           "semana": 1,
-          "dias": [
-            0
-          ],
+          "dias": [0],
           "bloque": 4,
           "salon": "205"
         },
         {
           "semana": 1,
-          "dias": [
-            4
-          ],
+          "dias": [4],
           "bloque": 2,
           "salon": "205"
         }
@@ -318,25 +246,19 @@
       "horarios": [
         {
           "semana": 1,
-          "dias": [
-            1
-          ],
+          "dias": [1],
           "bloque": 6,
           "salon": "118"
         },
         {
           "semana": 2,
-          "dias": [
-            0
-          ],
+          "dias": [0],
           "bloque": 1,
           "salon": "115"
         },
         {
           "semana": 2,
-          "dias": [
-            1
-          ],
+          "dias": [1],
           "bloque": 6,
           "salon": "121"
         }
@@ -349,17 +271,13 @@
       "horarios": [
         {
           "semana": 1,
-          "dias": [
-            0
-          ],
+          "dias": [0],
           "bloque": 2,
           "salon": "204"
         },
         {
           "semana": 1,
-          "dias": [
-            3
-          ],
+          "dias": [3],
           "bloque": 4,
           "salon": "204"
         }
@@ -372,9 +290,7 @@
       "horarios": [
         {
           "semana": 2,
-          "dias": [
-            2
-          ],
+          "dias": [2],
           "bloque": 6,
           "salon": "112"
         }

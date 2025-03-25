@@ -1,16 +1,16 @@
-const dias = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
-const diasShort = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
+const dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
+const diasShort = ["L", "M", "M", "J", "V", "S", "D"];
 const bloques = [
-  {numero: 1, inicio: '6:30 am', fin: '8:20 am'},
-  {numero: 2, inicio: '8:20 am', fin: '10:10 am'},
-  {numero: 3, inicio: '10:10 am', fin: '10:40 am'},
-  {numero: 4, inicio: '10:40 am', fin: '12:10 pm'},
-  {numero: 5, inicio: '12:10 pm', fin: '12:40 pm'},
-  {numero: 6, inicio: '12:40 pm', fin: '2:20 pm'},
+  {numero: 1, inicio: "6:30 am", fin: "8:20 am"},
+  {numero: 2, inicio: "8:20 am", fin: "10:10 am"},
+  {numero: 3, inicio: "10:10 am", fin: "10:40 am"},
+  {numero: 4, inicio: "10:40 am", fin: "12:10 pm"},
+  {numero: 5, inicio: "12:10 pm", fin: "12:40 pm"},
+  {numero: 6, inicio: "12:40 pm", fin: "2:20 pm"},
 ];
 
 const descanso = {
-  nombre: 'Descanso',
+  nombre: "Descanso",
   nombreProfesor: null,
   horarios: [
     {semana: 1, dias: [0, 1, 2, 3, 4], bloque: 3, salon: null},
@@ -18,391 +18,391 @@ const descanso = {
     {semana: 2, dias: [0, 1, 2, 3, 4], bloque: 3, salon: null},
     {semana: 2, dias: [0, 1, 2, 3, 4], bloque: 5, salon: null},
   ],
-  class_: 'descanso',
+  class_: "descanso",
 };
 
 const ciencias_naturales = {
-  nombre: 'Ciencias Narurales',
-  nombreProfesor: 'Hammes.',
+  nombre: "Ciencias Narurales",
+  nombreProfesor: "Hammes.",
   horarios: [
     {
       semana: 1,
       dias: [1],
       bloque: 2,
-      salon: '206',
+      salon: "206",
     },
     {
       semana: 2,
       dias: [1],
       bloque: 4,
-      salon: '100',
+      salon: "100",
     },
     {
       semana: 2,
       dias: [2],
       bloque: 1,
-      salon: '109',
+      salon: "109",
     },
     {
       semana: 2,
       dias: [3],
       bloque: 4,
-      salon: '100',
+      salon: "100",
     },
   ],
-  class_: 'ciencias_naturales',
+  class_: "ciencias_naturales",
 };
 
 const informatica = {
-  nombre: 'Informatica',
-  nombreProfesor: 'Jhon Fredy.',
+  nombre: "Informatica",
+  nombreProfesor: "Jhon Fredy.",
   horarios: [
     {
       semana: 2,
       dias: [1],
       bloque: 1,
-      salon: '119',
+      salon: "119",
     },
     {
       semana: 2,
       dias: [4],
       bloque: 4,
-      salon: '119',
+      salon: "119",
     },
   ],
-  class_: 'informatica',
+  class_: "informatica",
 };
 
 const matematicas = {
-  nombre: 'Matemáticas',
-  nombreProfesor: 'Donaldo F.',
+  nombre: "Matemáticas",
+  nombreProfesor: "Donaldo F.",
   horarios: [
     {
       semana: 1,
       dias: [3],
       bloque: 2,
-      salon: '203',
+      salon: "203",
     },
     {
       semana: 2,
       dias: [0],
       bloque: 6,
-      salon: '203',
+      salon: "203",
     },
     {
       semana: 2,
       dias: [3],
       bloque: 1,
-      salon: '203',
+      salon: "203",
     },
     {
       semana: 2,
       dias: [4],
       bloque: 2,
-      salon: '203',
+      salon: "203",
     },
   ],
-  class_: 'matematicas',
+  class_: "matematicas",
 };
 
 const logica_matematica = {
-  nombre: 'Lógica Matemática',
-  nombreProfesor: 'Jhon Jairo.',
+  nombre: "Lógica Matemática",
+  nombreProfesor: "Jhon Jairo.",
   horarios: [
     {
       semana: 1,
       dias: [0],
       bloque: 6,
-      salon: '211',
+      salon: "211",
     },
     {
       semana: 2,
       dias: [3],
       bloque: 6,
-      salon: '204',
+      salon: "204",
     },
   ],
-  class_: 'logica_matematica',
+  class_: "logica_matematica",
 };
 
 const laboratorio_lector = {
-  nombre: 'Laboratorio lector',
-  nombreProfesor: 'Yadira S.',
+  nombre: "Laboratorio lector",
+  nombreProfesor: "Yadira S.",
   horarios: [
     {
       semana: 1,
       dias: [2],
       bloque: 2,
-      salon: '114',
+      salon: "114",
     },
   ],
-  class_: 'laboratorio_lector',
+  class_: "laboratorio_lector",
 };
 
 const fisica = {
-  nombre: 'Física',
-  nombreProfesor: 'Alix M.',
+  nombre: "Física",
+  nombreProfesor: "Alix M.",
   horarios: [
     {
       semana: 1,
       dias: [4],
       bloque: 1,
-      salon: '210',
+      salon: "210",
     },
     {
       semana: 2,
       dias: [0],
       bloque: 2,
-      salon: '205',
+      salon: "205",
     },
   ],
-  class_: 'fisica',
+  class_: "fisica",
 };
 
 const ingles = {
-  nombre: 'Inglés',
-  nombreProfesor: 'Stefany.',
+  nombre: "Inglés",
+  nombreProfesor: "Stefany.",
   horarios: [
     {
       semana: 1,
       dias: [1],
       bloque: 4,
-      salon: '202',
+      salon: "202",
     },
     {
       semana: 2,
       dias: [4],
       bloque: 6,
-      salon: '202',
+      salon: "202",
     },
   ],
-  class_: 'ingles',
+  class_: "ingles",
 };
 
 const sociales = {
-  nombre: 'Sociales',
-  nombreProfesor: 'Sandra Ch.',
+  nombre: "Sociales",
+  nombreProfesor: "Sandra Ch.",
   horarios: [
     {
       semana: 1,
       dias: [1],
       bloque: 1,
-      salon: '201',
+      salon: "201",
     },
     {
       semana: 1,
       dias: [2],
       bloque: 4,
-      salon: '201',
+      salon: "201",
     },
     {
       semana: 1,
       dias: [4],
       bloque: 4,
-      salon: '201',
+      salon: "201",
     },
     {
       semana: 2,
       dias: [2],
       bloque: 4,
-      salon: '201',
+      salon: "201",
     },
     {
       semana: 2,
       dias: [3],
       bloque: 2,
-      salon: '201',
+      salon: "201",
     },
   ],
-  class_: 'sociales',
+  class_: "sociales",
 };
 
 const artes = {
-  nombre: 'Artes',
-  nombreProfesor: 'Andres G.',
+  nombre: "Artes",
+  nombreProfesor: "Andres G.",
   horarios: [
     {
       semana: 2,
       dias: [0],
       bloque: 4,
-      salon: '108',
+      salon: "108",
     },
     {
       semana: 2,
       dias: [4],
       bloque: 1,
-      salon: '108',
+      salon: "108",
     },
   ],
-  class_: 'artes',
+  class_: "artes",
 };
 
 const ingles_tecnico = {
-  nombre: 'Inglés Técnico',
-  nombreProfesor: 'Emilce M.',
+  nombre: "Inglés Técnico",
+  nombreProfesor: "Emilce M.",
   horarios: [
     {
       semana: 1,
       dias: [2],
       bloque: 6,
-      salon: '99',
+      salon: "99",
     },
     {
       semana: 2,
       dias: [2],
       bloque: 2,
-      salon: '99',
+      salon: "99",
     },
   ],
-  class_: 'ingles_tecnico',
+  class_: "ingles_tecnico",
 };
 
 const geometria = {
-  nombre: 'Geometría',
-  nombreProfesor: 'Nelson R.',
+  nombre: "Geometría",
+  nombreProfesor: "Nelson R.",
   horarios: [
     {
       semana: 1,
       dias: [4],
       bloque: 6,
-      salon: '203',
+      salon: "203",
     },
   ],
-  class_: 'geometria',
+  class_: "geometria",
 };
 
 const logica_filosofica = {
-  nombre: 'Lógica Filosófica',
-  nombreProfesor: 'Edisson.',
+  nombre: "Lógica Filosófica",
+  nombreProfesor: "Edisson.",
   horarios: [
     {
       semana: 1,
       dias: [2],
       bloque: 1,
-      salon: '209',
+      salon: "209",
     },
     {
       semana: 1,
       dias: [3],
       bloque: 6,
-      salon: '201',
+      salon: "201",
     },
   ],
-  class_: 'logica_filosofica',
+  class_: "logica_filosofica",
 };
 
 const quimica = {
-  nombre: 'Química',
-  nombreProfesor: 'Alexandra V.',
+  nombre: "Química",
+  nombreProfesor: "Alexandra V.",
   horarios: [
     {
       semana: 1,
       dias: [0],
       bloque: 4,
-      salon: '205',
+      salon: "205",
     },
     {
       semana: 1,
       dias: [4],
       bloque: 2,
-      salon: '205',
+      salon: "205",
     },
   ],
-  class_: 'quimica',
+  class_: "quimica",
 };
 
 const laboratorio_ciencias = {
-  nombre: 'Laboratorio Ciencias',
-  nombreProfesor: 'Alexandra V.',
+  nombre: "Laboratorio Ciencias",
+  nombreProfesor: "Alexandra V.",
   horarios: [
     {
       semana: 1,
       dias: [3],
       bloque: 1,
-      salon: '209',
+      salon: "209",
     },
   ],
-  class_: 'laboratorio_ciencias',
+  class_: "laboratorio_ciencias",
 };
 
 const castellano = {
-  nombre: 'Castellano',
-  nombreProfesor: 'Sandra F.',
+  nombre: "Castellano",
+  nombreProfesor: "Sandra F.",
   horarios: [
     {
       semana: 1,
       dias: [1],
       bloque: 6,
-      salon: '118',
+      salon: "118",
     },
     {
       semana: 2,
       dias: [0],
       bloque: 1,
-      salon: '115',
+      salon: "115",
     },
     {
       semana: 2,
       dias: [1],
       bloque: 6,
-      salon: '121',
+      salon: "121",
     },
   ],
-  class_: 'castellano',
+  class_: "castellano",
 };
 
 const educacion_fisica = {
-  nombre: 'Educación Física',
-  nombreProfesor: 'Matha Paola.',
+  nombre: "Educación Física",
+  nombreProfesor: "Matha Paola.",
   horarios: [
     {
       semana: 1,
       dias: [0],
       bloque: 1,
-      salon: 'Patio 3',
+      salon: "Patio 3",
     },
     {
       semana: 2,
       dias: [1],
       bloque: 2,
-      salon: 'Patio 3',
+      salon: "Patio 3",
     },
   ],
-  class_: 'educacion_fisica',
+  class_: "educacion_fisica",
 };
 
 const etica_y_religion = {
-  nombre: 'Ética y Religión',
-  nombreProfesor: 'Roberto S.',
+  nombre: "Ética y Religión",
+  nombreProfesor: "Roberto S.",
   horarios: [
     {
       semana: 1,
       dias: [0],
       bloque: 2,
-      salon: '204',
+      salon: "204",
     },
     {
       semana: 1,
       dias: [3],
       bloque: 4,
-      salon: '204',
+      salon: "204",
     },
   ],
-  class_: 'etica_y_religion',
+  class_: "etica_y_religion",
 };
 
 const laboratorio_ingles = {
-  nombre: 'Laboratorio Inglés',
-  nombreProfesor: 'Stefany.',
+  nombre: "Laboratorio Inglés",
+  nombreProfesor: "Stefany.",
   horarios: [
     {
       semana: 2,
       dias: [2],
       bloque: 6,
-      salon: '112',
+      salon: "112",
     },
   ],
-  class_: 'laboratorio_ingles',
+  class_: "laboratorio_ingles",
 };
 
 const Materias = [
@@ -451,7 +451,7 @@ class CrearElementoHTML {
 function buildWeekHTML(WeekNum) {
   const Week = document.getElementById(`Semana_${WeekNum}`);
   for (let i = 0; i < 5; i++) {
-    let day = new CrearElementoHTML('DIV', null, 'dia', null, `<h4>${diasShort[i]}</h4>`);
+    let day = new CrearElementoHTML("DIV", null, "dia", null, `<h4>${diasShort[i]}</h4>`);
     getSubjectsForDay(WeekNum, i).forEach(({nombre, nombreProfesor, horarios, class_}) => {
       let {inicio, fin} = bloques.find((block) => block.numero == horarios[0].bloque);
       day.Element.innerHTML += `
@@ -461,7 +461,7 @@ function buildWeekHTML(WeekNum) {
           </div>
         `;
     });
-    Week.insertAdjacentElement('beforeend', day.Element);
+    Week.insertAdjacentElement("beforeend", day.Element);
   }
 }
 
