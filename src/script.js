@@ -1,16 +1,16 @@
-[...document.getElementsByClassName("materia")].forEach((element) => {
-  element.addEventListener("click", MostrarInfoMateria);
+[...document.getElementsByClassName('materia')].forEach((element) => {
+  element.addEventListener('click', MostrarInfoMateria);
 });
 
 function MostrarInfoMateria(event) {
   let Objetivo = event.target;
-  while (!Objetivo.classList.contains("materia")) {
+  while (!Objetivo.classList.contains('materia')) {
     Objetivo = Objetivo.parentElement;
   }
-  if (!document.getElementById("background")) {
-    new _InfoMareria(Objetivo, Objetivo.getAttribute("data-profesor"), Objetivo.getAttribute("data-salon"), Objetivo.getAttribute("data-hora"));
+  if (!document.getElementById('background')) {
+    new _InfoMareria(Objetivo, Objetivo.getAttribute('data-profesor'), Objetivo.getAttribute('data-salon'), Objetivo.getAttribute('data-hora'));
   } else {
-    document.getElementById("background").remove();
+    document.getElementById('background').remove();
   }
 }
 
@@ -21,20 +21,20 @@ class _Background {
   }
 
   construirBackground() {
-    this.Element = document.createElement("div");
-    this.Element.classList.add("background");
-    this.Element.id = "background";
+    this.Element = document.createElement('div');
+    this.Element.classList.add('background');
+    this.Element.id = 'background';
     this.insertarBackground();
     console.log(window.scrollX);
     this.Element.style.left = `${window.scrollX}px`;
-    this.Element.addEventListener("click", () => {
+    this.Element.addEventListener('click', () => {
       this.retirarBackground();
     });
   }
 
   insertarBackground() {
-    let main = document.getElementById("main");
-    main.insertAdjacentElement("beforeend", this.Element);
+    let main = document.getElementById('main');
+    main.insertAdjacentElement('beforeend', this.Element);
   }
 
   retirarBackground() {
@@ -57,19 +57,19 @@ class _InfoMareria {
   }
 
   construirInfoMateria() {
-    this.Element = document.createElement("div");
+    this.Element = document.createElement('div');
     let Background = new _Background().getElement();
-    this.Element.classList.add("infoMateria");
-    let Profesor = document.createElement("h5");
+    this.Element.classList.add('infoMateria');
+    let Profesor = document.createElement('h5');
     Profesor.innerHTML = this.profesor;
-    let Salon = document.createElement("h4");
+    let Salon = document.createElement('h4');
     Salon.innerHTML = `Salon ${this.salon}`;
-    let Hora = document.createElement("h4");
+    let Hora = document.createElement('h4');
     Hora.innerHTML = this.hora;
-    this.Element.insertAdjacentElement("beforeend", Profesor);
-    this.Element.insertAdjacentElement("beforeend", Salon);
-    this.Element.insertAdjacentElement("beforeend", Hora);
-    Background.insertAdjacentElement("beforeend", this.Element);
+    this.Element.insertAdjacentElement('beforeend', Profesor);
+    this.Element.insertAdjacentElement('beforeend', Salon);
+    this.Element.insertAdjacentElement('beforeend', Hora);
+    Background.insertAdjacentElement('beforeend', this.Element);
     this.ObtenerDatosPadre();
     this.PosicionarElemento();
   }
@@ -79,12 +79,12 @@ class _InfoMareria {
     this.yposPadre = this.Padre.getBoundingClientRect().top + window.scrollY;
     this.widthPadre = this.Padre.clientWidth;
     this.heightPadre = this.Padre.clientHeight;
-    this.horientacion = this.widthPadre > this.heightPadre ? "horizontal" : "vertical";
+    this.horientacion = this.widthPadre > this.heightPadre ? 'horizontal' : 'vertical';
   }
 
   PosicionarElemento() {
     let separacion = 8;
-    if (this.horientacion == "horizontal") {
+    if (this.horientacion == 'horizontal') {
       let AnchoElemento = this.widthPadre * 0.9;
       this.Element.style.width = `${AnchoElemento}px`;
       this.Element.style.left = `${this.xposPadre + this.widthPadre * 0.05}px`;
