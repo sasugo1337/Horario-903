@@ -2,24 +2,24 @@
 
 :root {
   --descanso: #c05476;
-  --ciencias_naturales: #d85675;
-  --informatica: #da5234;
-  --matematicas: #d6837a;
-  --logica_matematica: #e3683e;
-  --laboratorio_lector: #dd7835;
-  --fisica: #e0963c;
-  --ingles: #e0963c;
-  --sociales: #d8be5e;
   --artes: #bcc256;
-  --ingles_tecnico: #85ad59;
-  --geometria: #55b080;
-  --logica_filosofica: #489160;
-  --quimica: #429a8e;
-  --laboratorio_ciencias: #4b99d2;
   --castellano: #668be1;
+  --ciencias_naturales: #d85675;
   --educacion_fisica: #668be1;
   --etica_y_religion: #828bc2;
+  --fisica: #e0963c;
+  --geometria: #55b080;
+  --ingles: #e0963c;
+  --ingles_tecnico: #85ad59;
+  --informatica: #da5234;
+  --laboratorio_ciencias: #4b99d2;
   --laboratorio_ingles: #ae9cce;
+  --laboratorio_lector: #dd7835;
+  --logica_filosofica: #489160;
+  --logica_matematica: #e3683e;
+  --matematicas: #d6837a;
+  --quimica: #429a8e;
+  --sociales: #d8be5e;
 }
 
 * {
