@@ -109,7 +109,7 @@ const _dias = [
     abreviatura: 'M',
     materias: [
       {id_materia: 10, salon: '119'},
-      {id_materia: 14, salon: 'Patio 3'},
+      {id_materia: 4, salon: 'Patio 3'},
       {id_materia: 0, salon: null},
       {id_materia: 3, salon: '100'},
       {id_materia: 0, salon: null},
