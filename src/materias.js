@@ -16,12 +16,12 @@ class CrearElementoHTML {
 const dias = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
 const diasShort = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
 const bloques = [
-  {numero: 1, inicio: '6:30 am', fin: '8:20 am'},
-  {numero: 2, inicio: '8:20 am', fin: '10:10 am'},
-  {numero: 3, inicio: '10:10 am', fin: '10:40 am'},
-  {numero: 4, inicio: '10:40 am', fin: '12:10 pm'},
-  {numero: 5, inicio: '12:10 pm', fin: '12:40 pm'},
-  {numero: 6, inicio: '12:40 pm', fin: '2:20 pm'},
+  { numero: 1, inicio: '6:30 am', fin: '8:20 am' },
+  { numero: 2, inicio: '8:20 am', fin: '10:10 am' },
+  { numero: 3, inicio: '10:10 am', fin: '10:40 am' },
+  { numero: 4, inicio: '10:40 am', fin: '12:10 pm' },
+  { numero: 5, inicio: '12:10 pm', fin: '12:40 pm' },
+  { numero: 6, inicio: '12:40 pm', fin: '2:20 pm' },
 ];
 
 const _dias = [
@@ -30,12 +30,12 @@ const _dias = [
     nombre: 'lunes',
     abreviatura: 'L',
     materias: [
-      {id_materia: 4, salon: 'Patio 3'},
-      {id_materia: 5, salon: '204'},
-      {id_materia: 0, salon: null},
-      {id_materia: 17, salon: '205'},
-      {id_materia: 0, salon: null},
-      {id_materia: 15, salon: '211'},
+      { id_materia: 17, salon: '205' },
+      { id_materia: 3, salon: '107' },
+      { id_materia: 0, salon: null },
+      { id_materia: 16, salon: '203' },
+      { id_materia: 0, salon: null },
+      { id_materia: 12, salon: 'Lab Inglés' },
     ],
   },
   {
@@ -43,12 +43,12 @@ const _dias = [
     nombre: 'martes',
     abreviatura: 'M',
     materias: [
-      {id_materia: 18, salon: '201'},
-      {id_materia: 3, salon: '206'},
-      {id_materia: 0, salon: null},
-      {id_materia: 8, salon: '202'},
-      {id_materia: 0, salon: null},
-      {id_materia: 2, salon: '118'},
+      { id_materia: 18, salon: '201' },
+      { id_materia: 3, salon: '206' },
+      { id_materia: 0, salon: null },
+      { id_materia: 4, salon: 'Patio 3' },
+      { id_materia: 0, salon: null },
+      { id_materia: 2, salon: '114' },
     ],
   },
   {
@@ -56,12 +56,12 @@ const _dias = [
     nombre: 'miércoles',
     abreviatura: 'M',
     materias: [
-      {id_materia: 14, salon: '209'},
-      {id_materia: 13, salon: '114'},
-      {id_materia: 0, salon: null},
-      {id_materia: 18, salon: '201'},
-      {id_materia: 0, salon: null},
-      {id_materia: 9, salon: '99'},
+      { id_materia: 6, salon: 'Lab Física' },
+      { id_materia: 5, salon: '204' },
+      { id_materia: 0, salon: null },
+      { id_materia: 14, salon: '207' },
+      { id_materia: 0, salon: null },
+      { id_materia: 15, salon: '207' },
     ],
   },
   {
@@ -69,12 +69,12 @@ const _dias = [
     nombre: 'jueves',
     abreviatura: 'J',
     materias: [
-      {id_materia: 11, salon: '209'},
-      {id_materia: 16, salon: '203'},
-      {id_materia: 0, salon: null},
-      {id_materia: 5, salon: '204'},
-      {id_materia: 0, salon: null},
-      {id_materia: 14, salon: '201'},
+      { id_materia: 14, salon: '205' },
+      { id_materia: 18, salon: '201' },
+      { id_materia: 0, salon: null },
+      { id_materia: 2, salon: '104' },
+      { id_materia: 0, salon: null },
+      { id_materia: 8, salon: '202' },
     ],
   },
   {
@@ -82,12 +82,12 @@ const _dias = [
     nombre: 'viernes',
     abreviatura: 'V',
     materias: [
-      {id_materia: 6, salon: '210'},
-      {id_materia: 17, salon: '205'},
-      {id_materia: 0, salon: null},
-      {id_materia: 18, salon: '201'},
-      {id_materia: 0, salon: null},
-      {id_materia: 7, salon: '203'},
+      { id_materia: 9, salon: '99' },
+      { id_materia: 10, salon: '119' },
+      { id_materia: 0, salon: null },
+      { id_materia: 1, salon: '108' },
+      { id_materia: 0, salon: null },
+      { id_materia: 3, salon: '210' },
     ],
   },
   {
@@ -95,12 +95,12 @@ const _dias = [
     nombre: 'lunes',
     abreviatura: 'L',
     materias: [
-      {id_materia: 2, salon: '115'},
-      {id_materia: 6, salon: '205'},
-      {id_materia: 0, salon: null},
-      {id_materia: 1, salon: '108'},
-      {id_materia: 0, salon: null},
-      {id_materia: 16, salon: '203'},
+      { id_materia: 5, salon: '204' },
+      { id_materia: 16, salon: '203' },
+      { id_materia: 0, salon: null },
+      { id_materia: 17, salon: '205' },
+      { id_materia: 0, salon: null },
+      { id_materia: 15, salon: '202' },
     ],
   },
   {
@@ -108,12 +108,12 @@ const _dias = [
     nombre: 'martes',
     abreviatura: 'M',
     materias: [
-      {id_materia: 10, salon: '119'},
-      {id_materia: 4, salon: 'Patio 3'},
-      {id_materia: 0, salon: null},
-      {id_materia: 3, salon: '100'},
-      {id_materia: 0, salon: null},
-      {id_materia: 2, salon: '121'},
+      { id_materia: 18, salon: '201' },
+      { id_materia: 10, salon: '119' },
+      { id_materia: 0, salon: null },
+      { id_materia: 16, salon: '203' },
+      { id_materia: 0, salon: null },
+      { id_materia: 2, salon: '115' },
     ],
   },
   {
@@ -121,12 +121,12 @@ const _dias = [
     nombre: 'miércoles',
     abreviatura: 'M',
     materias: [
-      {id_materia: 3, salon: '109'},
-      {id_materia: 9, salon: '99'},
-      {id_materia: 0, salon: null},
-      {id_materia: 18, salon: '201'},
-      {id_materia: 0, salon: null},
-      {id_materia: 12, salon: '112'},
+      { id_materia: 6, salon: 'Lab Física' },
+      { id_materia: 3, salon: '114' },
+      { id_materia: 0, salon: null },
+      { id_materia: 16, salon: '203' },
+      { id_materia: 0, salon: null },
+      { id_materia: 4, salon: 'Patio 3' },
     ],
   },
   {
@@ -134,12 +134,12 @@ const _dias = [
     nombre: 'jueves',
     abreviatura: 'J',
     materias: [
-      {id_materia: 16, salon: '203'},
-      {id_materia: 18, salon: '201'},
-      {id_materia: 0, salon: null},
-      {id_materia: 3, salon: '100'},
-      {id_materia: 0, salon: null},
-      {id_materia: 15, salon: '204'},
+      { id_materia: 1, salon: '108' },
+      { id_materia: 9, salon: '99' },
+      { id_materia: 0, salon: null },
+      { id_materia: 18, salon: '201' },
+      { id_materia: 0, salon: null },
+      { id_materia: 8, salon: '202' },
     ],
   },
   {
@@ -147,12 +147,12 @@ const _dias = [
     nombre: 'vieres',
     abreviatura: 'V',
     materias: [
-      {id_materia: 1, salon: '108'},
-      {id_materia: 16, salon: '203'},
-      {id_materia: 0, salon: null},
-      {id_materia: 10, salon: '119'},
-      {id_materia: 0, salon: null},
-      {id_materia: 8, salon: '202'},
+      { id_materia: 11, salon: '115' },
+      { id_materia: 13, salon: '114' },
+      { id_materia: 0, salon: null },
+      { id_materia: 18, salon: '201' },
+      { id_materia: 0, salon: null },
+      { id_materia: 7, salon: '205' },
     ],
   },
 ];
@@ -290,9 +290,9 @@ function buildWeekHTML(WeekNum) {
 function buildDay(dayNum) {
   let dia = _dias.find((dia) => dia.id_dia == dayNum); //dia
   let dayHtml = new CrearElementoHTML('DIV', null, 'dia', null, `<h4>${dia.abreviatura}</h4>`);
-  dia.materias.forEach(({id_materia, salon}, indice) => {
-    let {inicio, fin} = bloques[indice];
-    let {nombre, nombreProfesor, class_} = _materias.find((materia) => materia.id_materia == id_materia);
+  dia.materias.forEach(({ id_materia, salon }, indice) => {
+    let { inicio, fin } = bloques[indice];
+    let { nombre, nombreProfesor, class_ } = _materias.find((materia) => materia.id_materia == id_materia);
     dayHtml.Element.innerHTML += `
       <div data-hora="${inicio} - ${fin}" data-profesor="${nombreProfesor}" data-salon="${salon}" class="${class_ != 'descanso' ? 'materia' : ''} ${class_}">
         <h5>${nombre}</h5>
